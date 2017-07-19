@@ -25,7 +25,7 @@ SECRET_KEY = 'i8_uwvul8(*+t904*sqy#+kp#gl+lt_b*$a*4^o_1yn^e5!%=x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'192.168.1.15']
 
 
 # Application definition
