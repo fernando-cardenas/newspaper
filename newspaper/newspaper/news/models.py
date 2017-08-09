@@ -8,7 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 # Create your models here.
 @python_2_unicode_compatible
 class BaseNews(models.Model):
-    title = models.CharField(_('title'), max_length=255)
+    title = models.CharField(_('title'), max_length=255, help_text='Posible Texto de Ayuda')
     description = models.TextField(_('description'))
     publish_date = models.DateTimeField(_('publish date'))
 
@@ -24,7 +24,7 @@ class News(BaseNews):
         verbose_name = _('news item')
         verbose_name_plural = _('news')
 
-class Events(BaseNews):
+class Event(BaseNews):
     start_date = models.DateTimeField(_('start date'))
     end_date = models.DateTimeField(_('end date'))
 
